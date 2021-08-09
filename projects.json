@@ -1,0 +1,22 @@
+[
+	{
+		"name": "Vagas Brusque",
+		"description": "In this project we use Laravel as a framework. The project has areas for the administrator where he can control the entire flow of the application and an area for the user where he can register and pay for job vacancies through an integration with the payment gateway Pagar.me.",
+		"url":"https://vagasbrusque.com.br",
+		"img":"img/vagas-brusque.webp"
+
+	},
+	{
+		"name": "Raffcom",
+		"description": "The website layout was prepared by the agency itself, and then programmed using HTML, CSS, JS, WordPress was used as a CMS to facilitate the client's content management, such as posting new blog posts and creating pages internal for content dissemination.",
+		"url":"https://www.raffcom.com.br",
+		"img":"img/raffcom.webp"
+
+	},
+	{
+		"name": "Booq",
+		"description": "In this project we use Wordpress as CMS, the website theme was diagramed from a custom layout, approved by the client, the project is a combination of the client's ease of managing collections using the CMS, with custom development.",
+		"url":"https://booq.com.br",
+		"img":"img/booq.webp"
+	}
+]

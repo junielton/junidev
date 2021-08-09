@@ -1,82 +1,78 @@
 import Head from 'next/head'
+import { Projects } from '../components/Swiper/Projects'
+const brand = "<juniDev/>"
+
 
 export default function Home() {
-  return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+	return (
+		<div className="flex flex-col items-center justify-center min-h-screen py-2 text-indigo-700">
+			<Head>
+				<meta name="description"
+					content="This is an example of a meta description.
+        			This will often show up in search results.">
+				</meta>
+				<title>Create Next App</title>
+				<link rel="icon" href="/favicon.ico" />
+			</Head>
 
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
+			<header className="flex w-full md:w-3/5 flex-wrap justify-center md:justify-between items-center my-2">
+				<span className="text-2xl font-black">
+					{brand}
+				</span>
+				<nav className="my-2">
+					<a className="py-2 px-4 mx-3" href="#about">
+						About
+					</a>
+					<a className="py-2 px-4 mx-3" href="#projects">
+						Projects
+					</a>
+					<a className="py-2 px-4 mx-3" href="#contact">
+						Contact
+					</a>
+				</nav>
+			</header>
 
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
-            pages/index.js
-          </code>
-        </p>
+			<main className="flex flex-col flex-1 px-4 text-center md:text-left my-10 ">
 
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
-            </p>
-          </a>
+				<section id="about" className="flex flex-wrap justify-between items-center w-full md:w-3/5 mx-auto">
+					<div className="w-full md:w-1/2">
+						<h1 className="text-2xl font-black mb-5">Hi there! My name is Junielton Quirino and i'm a full stack web developer from Brazil.</h1>
+						<h2 className="text-1xl mb-5">Currently i work with PHP and JavaScript, in some projects using Laravel, WordPress, react, nextJs and node.</h2>
+						<p className="text-sm font-bold">Below you can see some of the projects i've worked on.</p>
+					</div>
+					<div className="w-full mx-auto md:w-1/2">
+						<img className="w-full" src="img/juni-dev.gif" alt="developer" />
+					</div>
+				</section>
 
-          <a
-            href="https://nextjs.org/learn"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
+				<h2 className="text-center text-2xl font-black mt-5">
+					Here are some projects i've worked on.
+				</h2>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
+				<Projects />
+			</main>
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
+			<h2 id="contact" className="text-center text-2xl font-black mt-5">
+				You can find me on
+			</h2>
 
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-        </a>
-      </footer>
-    </div>
-  )
+			<footer className="flex items-center justify-center w-full h-24">
+
+				<section className="flex flex-wrap justify-center">
+					<a className="m-2" href="https://github.com/junielton">
+						<img src="img/github.svg" alt="Github" />
+					</a>
+					<a className="m-2" href="https://www.linkedin.com/in/junielton/">
+						<img src="img/linkedin.svg" alt="linkedIn" />
+					</a>
+					<a className="m-2" href="https://twitter.com/NielQS">
+						<img src="img/twitter.svg" alt="Twitter" />
+					</a>
+					<a className="m-2" href="https://www.instagram.com/nielqs/">
+						<img src="img/instagram.svg" alt="Instagram" />
+					</a>
+				</section>
+			</footer>
+		</div>
+	)
 }
