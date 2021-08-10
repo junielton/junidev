@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Projects } from '../components/Swiper/Projects'
+import { Projects } from '../components/Projects'
 const brand = "<juniDev/>"
 
 
@@ -8,10 +8,9 @@ export default function Home() {
 		<div className="flex flex-col items-center justify-center min-h-screen py-2 text-indigo-700">
 			<Head>
 				<meta name="description"
-					content="This is an example of a meta description.
-        			This will often show up in search results.">
+					content="My personal webpage, introducing myself and promoting a little of what I do in the world of web development, website creation, systems, and programming in general.">
 				</meta>
-				<title>Create Next App</title>
+				<title>juniDev - Yep another developer page</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
@@ -37,11 +36,15 @@ export default function Home() {
 				<section id="about" className="flex flex-wrap justify-between items-center w-full md:w-3/5 mx-auto">
 					<div className="w-full md:w-1/2">
 						<h1 className="text-2xl font-black mb-5">Hi there! My name is Junielton Quirino and i'm a full stack web developer from Brazil.</h1>
-						<h2 className="text-1xl mb-5">Currently i work with PHP and JavaScript, in some projects using Laravel, WordPress, react, nextJs and node.</h2>
-						<p className="text-sm font-bold">Below you can see some of the projects i've worked on.</p>
+						<h2 className="text-1xl mb-5">
+							Currently i work with PHP and JavaScript, in some projects using Laravel, WordPress, react, nextJs and node.
+						</h2>
+						<p className="text-sm font-bold">
+							Below you can see some of the projects i've worked on.
+						</p>
 					</div>
 					<div className="w-full mx-auto md:w-1/2">
-						<img className="w-full" src="img/juni-dev.gif" alt="developer" />
+						<img className="w-full" src="img/developer.png" alt="developer" />
 					</div>
 				</section>
 
