@@ -5,7 +5,8 @@ const brand = "<juniDev/>"
 
 export default function Home() {
 	return (
-		<div className="flex flex-col items-center justify-center min-h-screen py-2 text-indigo-700">
+		<div className="flex flex-col items-center justify-center min-h-screen py-2
+		 text-white bg-gray-700">
 			<Head>
 				<meta name="description"
 					content="My personal webpage, introducing myself and promoting a little of what I do in the world of web development, website creation, systems, and programming in general.">
@@ -31,14 +32,38 @@ export default function Home() {
 				</nav>
 			</header>
 
-			<main className="flex flex-col flex-1 px-4 text-center md:text-left my-10 ">
+			<main className="container flex flex-col flex-1 px-4 text-center md:text-left my-10 ">
 
-				<section id="about" className="flex flex-wrap justify-between items-center w-full md:w-3/5 mx-auto">
+				<section id="about" className="flex flex-wrap justify-between items-center mx-auto">
 					<div className="w-full md:w-1/2">
-						<h1 className="text-2xl font-black mb-5">Hi there! My name is Junielton Quirino and i'm a full stack web developer from Brazil.</h1>
+						<h1 className="text-2xl lg:text-4xl font-black mb-5">Hi there! My name is Junielton Quirino and i'm a full stack web developer from Brazil.</h1>
 						<h2 className="text-1xl mb-5">
 							Currently i work with PHP and JavaScript, in some projects using Laravel, WordPress, react, nextJs and node.
 						</h2>
+
+						<h2 id="contact" className=" text-2xl font-black mt-5">
+							You can find me on
+						</h2>
+
+						<div className="flex items-center justify-center md:justify-start w-full h-24">
+
+							<section className="flex flex-wrap justify-center">
+								<a className="m-2" href="https://github.com/junielton">
+									<img src="img/github.svg" alt="Github" />
+								</a>
+								<a className="m-2" href="https://www.linkedin.com/in/junielton/">
+									<img src="img/linkedin.svg" alt="linkedIn" />
+								</a>
+								<a className="m-2" href="https://twitter.com/NielQS">
+									<img src="img/twitter.svg" alt="Twitter" />
+								</a>
+								<a className="m-2" href="https://www.instagram.com/nielqs/">
+									<img src="img/instagram.svg" alt="Instagram" />
+								</a>
+							</section>
+						</div>
+
+
 						<p className="text-sm font-bold">
 							Below you can see some of the projects i've worked on.
 						</p>
@@ -56,25 +81,13 @@ export default function Home() {
 			</main>
 
 			<h2 id="contact" className="text-center text-2xl font-black mt-5">
-				You can find me on
+
 			</h2>
 
 			<footer className="flex items-center justify-center w-full h-24">
-
-				<section className="flex flex-wrap justify-center">
-					<a className="m-2" href="https://github.com/junielton">
-						<img src="img/github.svg" alt="Github" />
-					</a>
-					<a className="m-2" href="https://www.linkedin.com/in/junielton/">
-						<img src="img/linkedin.svg" alt="linkedIn" />
-					</a>
-					<a className="m-2" href="https://twitter.com/NielQS">
-						<img src="img/twitter.svg" alt="Twitter" />
-					</a>
-					<a className="m-2" href="https://www.instagram.com/nielqs/">
-						<img src="img/instagram.svg" alt="Instagram" />
-					</a>
-				</section>
+				<h2 id="contact" className="text-center text-2xl font-black mt-5">
+					That's all for now :)
+				</h2>
 			</footer>
 		</div>
 	)
