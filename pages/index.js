@@ -36,9 +36,9 @@ export default function Home() {
 
 				<section id="about" className="flex flex-wrap justify-between items-center mx-auto">
 					<div className="w-full md:w-1/2">
-						<h1 className="text-2xl lg:text-4xl font-black mb-5">Hi there! My name is Junielton Quirino and i'm a full stack web developer from Brazil.</h1>
+						<h1 className="text-2xl lg:text-4xl font-black mb-5">Hi there! My name is Junielton Quirino and I'm a full stack web developer from Brazil.</h1>
 						<h2 className="text-1xl mb-5">
-							Currently i work with PHP and JavaScript, in some projects using Laravel, WordPress, react, nextJs and node.
+							Currently I work with PHP and JavaScript, in some projects using Laravel, WordPress, react, nextJs and node.
 						</h2>
 
 						<h2 id="contact" className=" text-2xl font-black mt-5">
@@ -48,16 +48,16 @@ export default function Home() {
 						<div className="flex items-center justify-center md:justify-start w-full h-24">
 
 							<section className="flex flex-wrap justify-center">
-								<a className="m-2" href="https://github.com/junielton">
+								<a target="_blank" className="m-2" href="https://github.com/junielton">
 									<img src="img/github.svg" alt="Github" />
 								</a>
-								<a className="m-2" href="https://www.linkedin.com/in/junielton/">
+								<a target="_blank" className="m-2" href="https://www.linkedin.com/in/junielton/">
 									<img src="img/linkedin.svg" alt="linkedIn" />
 								</a>
-								<a className="m-2" href="https://twitter.com/NielQS">
+								<a target="_blank" className="m-2" href="https://twitter.com/NielQS">
 									<img src="img/twitter.svg" alt="Twitter" />
 								</a>
-								<a className="m-2" href="https://www.instagram.com/nielqs/">
+								<a target="_blank" className="m-2" href="https://www.instagram.com/nielqs/">
 									<img src="img/instagram.svg" alt="Instagram" />
 								</a>
 							</section>
@@ -65,7 +65,7 @@ export default function Home() {
 
 
 						<p className="text-sm font-bold">
-							Below you can see some of the projects i've worked on.
+							Below you can see some of the projects I've worked on.
 						</p>
 					</div>
 					<div className="w-full mx-auto md:w-1/2">
@@ -74,7 +74,7 @@ export default function Home() {
 				</section>
 
 				<h2 className="text-center text-2xl font-black mt-5">
-					Here are some projects i've worked on.
+					Here are some projects I've worked on.
 				</h2>
 
 				<Projects />
